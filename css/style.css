@@ -1,0 +1,393 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* ESTILOS BODY */
+/*HEADER*/
+#header {
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    background-size: cover;
+    display: flex;
+    position: fixed;
+    z-index: 10000 ;
+    justify-content: space-around;
+}
+.headerLogo {
+    width: 330px;
+    height: 70px;
+}
+#nav ul li {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 14px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+/*ESTILOS BODY*/
+#body {
+    padding-bottom: 50%;
+    max-width: 100px;
+    background-color: black;
+    height: 350px;
+}
+/*MAIN INDEX*/
+.imagesindex {
+    width: 1256%;
+    height: 360px;
+    padding-top: 70px;
+}
+.subtit1 {
+    color: #ffffff;
+    background-color: #370303;
+    width: 1256%;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 13px;
+}
+.video1{
+    height: 300px;
+    width: 1250%;
+    text-align: center;
+}
+.gif1{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+/* ESTILOS ABOUT */
+/* PRIMERA MAIN ABOUT */
+.aboutcaja1{
+    width: 90%;
+    position: relative;
+    display: inline-block;
+}
+.aboutImagen1{
+    width: 1396%;
+    height: 350px;
+    display: block;
+    padding-top: 70px;
+}
+/*FRASE */
+.aboutTitl{
+    width: 1250%;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: xx-large
+}
+/* SEGUNDA PARTE DEL MAIN */
+.mainAbout{
+    height: 1350px;
+    margin: 0 auto;
+}
+/* ABOUT THE BAND */
+.subAbout1{
+    color: #6d0b0b;
+    display: flex;
+    height: 40px;
+    width: 1180%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.primerItem{
+    display: flex;
+    width: 1256%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.infoAbout{
+    color: white;
+    display: flex;
+    margin-left: 70px;
+    height: 200px;
+}
+.p1{
+    width: 450px;
+    margin: 10px 40px;
+    height: 180px;
+}
+.p2{
+    width: 450px;
+    height: 180px;
+    margin: 10px 60px;
+}
+/* TERCERA PARTE MAIN MEMBERS*/
+.members__titl{  
+    color: #6d0b0b;
+    display: flex;
+    height: 40px;
+    width: 1180%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.members{
+    width: 1230%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px
+}
+.members__card{
+    background-color: black;
+    width: 210px;
+    height: 300px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.members__card:hover {
+    padding-bottom: 10px;
+    padding-right: 5px;
+    box-shadow: 10px 4px  8px rgba(97, 4, 4, 0.731);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.persona--perfil{
+    width: 100%;
+    height: 250px;
+}
+.persona--title{
+    color: #6d0b0b;
+    text-align: center;
+}
+.persona--texto{
+    color: white;
+    text-align: center;
+}
+/* OTEHR PROJECTS */
+.projects__titl{
+    color: #6d0b0b;
+    display: flex;
+    height: 40px;
+    width: 1180%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.projects{
+    width: 650px;
+    height: 210px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+.projects__card{
+    background-color: black;
+    width: 170px;
+    height: 190px;
+}
+.projects__card:active{
+    padding-bottom: 50px;
+    padding-right: 50px;
+    box-shadow: 10px 4px  8px rgba(97, 4, 4, 0.731);
+    transition: 1s;
+}
+.projects--perfil{
+    width: 170px;
+    height: 150px;
+    border-radius: 100%;
+}
+.projects--title{
+    color: #6d0b0b;
+    text-align: center;
+}
+
+/*ESTILOS LISTEN */ 
+.mainlisten{
+    padding-top: 70px;
+}
+.streamUs{
+    width: 1256%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #370303;
+}
+.subTitListen{
+    color: white;
+    width: 1256%;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+}
+.streamsUslinks {
+    color: #ffffff00;
+    margin: 9px;
+    margin-bottom: 5px;
+    display: flex;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.album__card{
+    display: flex;
+    flex-direction: row;
+    margin: 19px;
+    justify-content: center;
+    width: 290px;
+    height: 360px;
+}
+.albums__titl{
+    color: #6d0b0b;
+    display: flex;
+    height: 30px;
+    width: 1180%;
+    margin-top: 24px;
+    margin-bottom: 9px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.albums{
+    width: 1230%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS MERCH*/
+.mainMerch{
+    width: 100%;
+    height: 300px;
+}
+.title-merch{
+    color: #ffffff;
+    background-color: #370303;
+    width: 1256%;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 14px;
+}
+.signup{
+    color: white;
+    display: inline-block;
+    width: 1250%;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+/* ESTILOS TOUR */
+/* BODY MAIN TOUR */
+
+.subTour{
+    color: #ffffff;
+    background-color: rgb(8, 72, 109);
+    width: 1250%;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* ESTILOS FOOTER */
+#footer{
+    background-color: black;
+    width: 1256%;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerlogo{ 
+    display: flex;
+    height: 90px;
+    margin-top: 14px;
+}
+#footerNav {
+    margin: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    height: 70px;
+    width: 50%;
+}
+#footerNav ul {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 50px;
+}
+.footerNav-copy{
+    display: flex;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    justify-content: center;
+}
+.footerRedes{
+    margin: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    font-size: 32px;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
