@@ -27,18 +27,21 @@
     padding: 10px 10px;
     font-size: 15px;
 }
+#main{
+    min-height: 100vh;
+}
 /*ESTILOS BODY*/
 #body {
-    padding-bottom: 50%;
     max-width: 100px;
     background-color: black;
-    height: 350px;
+    height: auto;
 }
 /*MAIN INDEX*/
 .imagesindex {
     width: 1256%;
     height: 360px;
     padding-top: 70px;
+    flex-wrap: wrap;
 }
 .subtit1 {
     color: #ffffff;
@@ -46,29 +49,32 @@
     width: 1256%;
     height: 70px;
     display: inline-block;
+    flex-wrap: wrap;
     text-align: center;
     padding-top: 13px;
+    margin-bottom: 0px;
+    font-size: 30px;
 }
 .video1{
-    height: 300px;
+    height: 580px;
     width: 1250%;
     text-align: center;
 }
-.gif1{
-    height: 300px;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width:600px) {
+    
 }
+
 /* ESTILOS ABOUT */
 /* PRIMERA MAIN ABOUT */
 .aboutcaja1{
     width: 90%;
     position: relative;
     display: inline-block;
+    flex-wrap: wrap;
 }
 .aboutImagen1{
     width: 1396%;
-    height: 350px;
+    height: 355px;
     display: block;
     padding-top: 70px;
 }
@@ -86,17 +92,19 @@
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: xx-large
+    font-size: 30px ;
 }
 /* SEGUNDA PARTE DEL MAIN */
 .mainAbout{
-    height: 1350px;
+    min-height: 100vh;
+    height: auto;
     margin: 0 auto;
 }
 /* ABOUT THE BAND */
 .subAbout1{
     color: #6d0b0b;
     display: flex;
+    flex-wrap: wrap;
     height: 40px;
     width: 1180%;
     margin-top: 30px;
@@ -107,24 +115,27 @@
 }
 .primerItem{
     display: flex;
-    width: 1256%;
+    height: auto;
+    width: 1010%;
+    margin-left: 100px;
+    margin-right: 150px;
     justify-content: space-between;
     flex-direction: column;
+    line-height: 20px;
 }
 .infoAbout{
     color: white;
     display: flex;
-    margin-left: 70px;
-    height: 200px;
+    height: auto;
 }
 .p1{
     width: 450px;
     margin: 10px 40px;
-    height: 180px;
+    height: 250px;
 }
 .p2{
     width: 450px;
-    height: 180px;
+    height: 250px;
     margin: 10px 60px;
 }
 /* TERCERA PARTE MAIN MEMBERS*/
@@ -144,6 +155,7 @@
     height: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -153,7 +165,8 @@
 .members__card{
     background-color: black;
     width: 210px;
-    height: 300px;
+    height: auto;
+    font-size: 15px;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -177,10 +190,15 @@
 .persona--title{
     color: #6d0b0b;
     text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 .persona--texto{
     color: white;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px
 }
 /* OTEHR PROJECTS */
 .projects__titl{
@@ -188,7 +206,7 @@
     display: flex;
     height: 40px;
     width: 1180%;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 70px;
     padding-left: 20px;
@@ -196,41 +214,61 @@
 }
 .projects{
     width: 650px;
-    height: 210px;
+    height: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 50px;
     padding: 10px;
     padding-left: 10px;
-    flex-wrap: wrap;
 }
 .projects__card{
     background-color: black;
     width: 170px;
-    height: 190px;
-}
-.projects__card:active{
-    padding-bottom: 50px;
-    padding-right: 50px;
-    box-shadow: 10px 4px  8px rgba(97, 4, 4, 0.731);
-    transition: 1s;
+    height: 220px;
 }
 .projects--perfil{
     width: 170px;
-    height: 150px;
+    height: 170px;
     border-radius: 100%;
 }
-.projects--title{
+.btn{
+    font-size: 26px;
+    padding-left: 18px;
+    background-color: black;
+    border-color: black;
     color: #6d0b0b;
-    text-align: center;
+}
+
+.btn-projects{
+    font-size: 26px;
+    padding-top: 2px;
+    padding-left: 18px;
+    padding-right: 12px;
+    background-color: black;
+    color: #6d0b0b;
+}
+@media screen and (max-width:750px) {
+    .primerItem{
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+    .infoAbout{
+        flex-wrap: wrap;
+    }
+    .members{
+        flex-wrap: wrap;
+    }
 }
 
 /*ESTILOS LISTEN */ 
 .mainlisten{
     padding-top: 70px;
+    min-height: 100vh;
+    height: auto;
 }
 .streamUs{
     width: 1256%;
@@ -246,10 +284,11 @@
     display: inline-block;
     text-align: center;
     padding-top: 10px;
+    font-size: 30px;
+    margin-bottom: 0px;
 }
 .streamsUslinks {
     color: #ffffff00;
-    margin: 9px;
     margin-bottom: 5px;
     display: flex;
     height: 20px;
@@ -292,20 +331,11 @@
     padding: 10px
 }
 
-
-
-
-
-
-
-
-
-
-
 /*ESTILOS MERCH*/
 .mainMerch{
+    min-height: 100vh;
     width: 100%;
-    height: 300px;
+    height: 740px;
 }
 .title-merch{
     color: #ffffff;
@@ -316,23 +346,59 @@
     text-align: center;
     margin-top: 70px;
     padding-top: 14px;
+    font-size: 30px;
 }
-.signup{
-    color: white;
-    display: inline-block;
-    width: 1250%;
-    height: 70px;
-    display: inline-block;
-    text-align: center;
+.subtMerch{
+    color: #6d0b0b;
+    display: flex;
+    height: 30px;
+    width: 1100%;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    margin-left: 80px;
+    margin-right: 60px;
+    padding: 0px 0px;
+    font-size: 25px;
 }
-
-
-
-
+.carousel{
+    width: 700%;
+    height: 260px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.carousel-inner{
+    width: 500px;
+    height: 220px;
+    padding: 0px 44px;
+    margin: 0px 85px;
+}
+.carousel-item{
+    width: 300px;
+    height: 220px;
+    padding: 0px 30px;
+    margin: 0px 70px;
+}
+.d-block{
+    width: 100px;
+    height: 230px;
+}
+.carousel-caption{
+    width: 200px;
+    height: 55px;
+}
+.rowMerch{
+    width: 480%;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+.form-label{
+    color: #6d0b0b;
+    padding-top: 10px;
+}
 
 /* ESTILOS TOUR */
 /* BODY MAIN TOUR */
-
 .subTour{
     color: #ffffff;
     background-color: rgb(8, 72, 109);
@@ -341,12 +407,67 @@
     display: inline-block;
     text-align: center;
 }
+.tourcaja1{
+    width: 90%;
+    position: relative;
+    display: inline-block;
+}
+.tourImagen1{
+    width: 1300%;
+    height: 335px;
+    display: block;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.tourTitl{
+    width: 1250%;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: xx-large
+}
+.row{
+    align-items: center;
+}
+.container{
+    color: white;
+    width: 900%;
+    height: 400px;
+    padding: 15px;
+    margin-left: 180px;
+    margin-right: 350px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
 
+.item-btm{
+    display: block;
+    padding: .75rem 1.25rem;
+}
+.buttom__list{
+    background-color: #370303;
+    color: #ffffff;
+    border-radius: 1px;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
 
 /* ESTILOS FOOTER */
 #footer{
     background-color: black;
-    width: 1256%;
+    width: 1256px;
     height: 120px;
     display: flex;
     flex-wrap: wrap;
@@ -357,21 +478,23 @@
     margin-top: 14px;
 }
 #footerNav {
-    margin: 10px;
+    margin: 15px;
     margin-bottom: 5px;
     display: inline-block;
-    height: 70px;
+    height: 60px;
     width: 50%;
 }
 #footerNav ul {
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     margin-left: 20px;
+    margin-right: 20px;
     justify-content: center;
     align-items: center;
     width: 500px;
     gap: 50px;
+    color: black;
 }
 .footerNav-copy{
     display: flex;
@@ -379,6 +502,7 @@
     text-align: center;
     font-size: 10px;
     justify-content: center;
+    margin-bottom: 0px;
 }
 .footerRedes{
     margin: 15px;
