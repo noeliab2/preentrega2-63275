@@ -9,26 +9,32 @@
 #header {
     background-color: black;
     width: 100%;
-    height: 70px;
+    height: auto;
     background-size: cover;
     display: flex;
     position: fixed;
     z-index: 10000 ;
     justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
 }
 .headerLogo {
-    width: 330px;
-    height: 70px;
+    width: 320px;
+    height: 80px;
+}
+#nav ul{
+    margin-bottom: 0;
 }
 #nav ul li {
     display: inline-block;
     flex-wrap: wrap;
     margin: 14px;
     padding: 10px 10px;
-    font-size: 15px;
+    font-size: 20px;
 }
-#main{
+#main{ /*MAIN INDEX*/
     min-height: 100vh;
+    text-align: center;
 }
 /*ESTILOS BODY*/
 #body {
@@ -39,9 +45,9 @@
 /*MAIN INDEX*/
 .imagesindex {
     width: 1256%;
-    height: 360px;
-    padding-top: 70px;
+    height: auto;
     flex-wrap: wrap;
+    padding-top: 80px;
 }
 .subtit1 {
     color: #ffffff;
@@ -56,14 +62,55 @@
     font-size: 30px;
 }
 .video1{
-    height: 580px;
+    height: auto;
     width: 1250%;
     text-align: center;
 }
-@media screen and (max-width:600px) {
-    
+.img-fluid{
+    width: 100%;
 }
-
+@media screen and (max-width:768px) {
+    #header{
+        flex-direction: row;
+        height: 120px;
+        font-size: 40px;
+    }
+    #nav ul li{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .headerLogo{
+        width: 310px;
+        height: auto;
+    } /*MAIN INDEX*/
+    .imagesindex{
+        padding-top: 116px;
+        height: 550px;
+    }
+    .subtit1{
+        font-size: 45px;
+        padding-top: 10px;
+        margin-bottom: 0px;
+        height: 100px;
+    }
+}
+@media screen and (max-width:480px) {
+    #header{
+        height: 120px;
+    }
+    #nav ul li{
+        font-size: 25px;
+    }
+    .headerLogo{
+        width: 310px;
+        height: auto;
+    }
+    .imagesindex{
+        height: 600px;
+    }
+}
 /* ESTILOS ABOUT */
 /* PRIMERA MAIN ABOUT */
 .aboutcaja1{
@@ -131,12 +178,12 @@
 .p1{
     width: 450px;
     margin: 10px 40px;
-    height: 250px;
+    height: 240px;
 }
 .p2{
     width: 450px;
-    height: 250px;
-    margin: 10px 60px;
+    height: 240px;
+    margin: 10px 40px;
 }
 /* TERCERA PARTE MAIN MEMBERS*/
 .members__titl{  
@@ -151,7 +198,7 @@
     font-size: 25px;
 }
 .members{
-    width: 1230%;
+    width: 1200%;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -159,8 +206,9 @@
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 10px;
-    padding: 10px
+    padding: 10px;
+    padding-right: 0;
+    min-width: 250px;
 }
 .members__card{
     background-color: black;
@@ -217,7 +265,6 @@
     height: auto;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -235,14 +282,6 @@
     height: 170px;
     border-radius: 100%;
 }
-.btn{
-    font-size: 26px;
-    padding-left: 18px;
-    background-color: black;
-    border-color: black;
-    color: #6d0b0b;
-}
-
 .btn-projects{
     font-size: 26px;
     padding-top: 2px;
@@ -252,18 +291,84 @@
     color: #6d0b0b;
 }
 @media screen and (max-width:750px) {
+    .aboutImagen1{ /*PRIMER CAJA ABOUT*/
+        padding-top: 110px;
+        height: auto;
+    }
+    .aboutTitl{
+        font-size: 45px;
+        height: auto;
+    }
+    .subAbout1{ /*SEGUNDA CAJA ABOUT*/
+        font-size: 45px;
+        margin-bottom: 30px;
+        height: auto;
+    }
     .primerItem{
         flex-wrap: wrap;
         margin-right: 0;
     }
     .infoAbout{
         flex-wrap: wrap;
+        width: 100%;
+        font-size: 28px;
+    }
+    .p1, .p2{
+        width: 100%;
+        line-height: normal;
+        height: auto;
+    }
+    .members__titl{ /*TERCERA CAJA ABOUT*/
+        font-size: 45px;
+        margin-bottom: 30px;
+        height: auto;
     }
     .members{
         flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+    .members__card{
+        flex-direction: column;
+        flex: 0 0 auto;
+        width: 35%;
+        height: 500px;
+    }
+    .persona--perfil{
+        width: 100%;
+        height: 400px;
+    }
+    .persona--title{
+        font-size: 30px;
+    }
+    .persona--texto{
+        font-size: 20px;
+    }
+    .projects__titl{ /*CUARTA CAJA ABOUT*/
+        font-size: 45px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .projects{
+        flex-direction: row;
+        width: 600%;
+        height: auto;
+        margin-left: 100px;
+        gap: 100px;
+    }
+    .projects__card{
+        width: 100%;
+        height: auto;
+    }
+    .projects--perfil{
+        width: 100%;
+        height: 220px;
+    }
+    .btn-projects{
+        font-size: 30px;
+        justify-content: center;
     }
 }
-
 /*ESTILOS LISTEN */ 
 .mainlisten{
     padding-top: 70px;
@@ -298,15 +403,6 @@
     justify-content: center;
     gap: 70px;
 }
-
-.album__card{
-    display: flex;
-    flex-direction: row;
-    margin: 19px;
-    justify-content: center;
-    width: 290px;
-    height: 360px;
-}
 .albums__titl{
     color: #6d0b0b;
     display: flex;
@@ -318,7 +414,6 @@
     padding-left: 20px;
     font-size: 25px;
 }
-
 .albums{
     width: 1230%;
     height: auto;
@@ -330,12 +425,54 @@
     margin-right: 10px;
     padding: 10px
 }
-
+.album__card{
+    display: flex;
+    flex-direction: row;
+    margin: 19px;
+    justify-content: center;
+    width: 290px;
+    height: 360px;
+}
+@media screen and (max-width:750px){
+    .mainlisten{
+        padding-top: 118px;
+    }
+    .streamUs{
+        height: auto;
+    }
+    .subTitListen{
+        height: auto;
+        font-size: 45px;
+    }
+    .streamsUslinks{
+        font-size: 40px;
+        height: auto;
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+    .albums__titl{
+        font-size: 45px;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .albums{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:480px) {
+    .albums{
+        width: 800%;
+        flex-wrap: wrap;
+    }
+    .album__card{
+        height: auto;
+    }
+}
 /*ESTILOS MERCH*/
 .mainMerch{
     min-height: 100vh;
     width: 100%;
-    height: 740px;
+    height: auto;
 }
 .title-merch{
     color: #ffffff;
@@ -344,8 +481,8 @@
     height: 70px;
     display: inline-block;
     text-align: center;
-    margin-top: 70px;
-    padding-top: 14px;
+    margin-top: 80px;
+    padding-top: 10px;
     font-size: 30px;
 }
 .subtMerch{
@@ -360,31 +497,13 @@
     padding: 0px 0px;
     font-size: 25px;
 }
-.carousel{
-    width: 700%;
-    height: 260px;
-    margin-left: 300px;
-    margin-right: 300px;
+.row{
+    width: 1200%;
+    margin-left: 25px;
 }
-.carousel-inner{
-    width: 500px;
-    height: 220px;
-    padding: 0px 44px;
-    margin: 0px 85px;
-}
-.carousel-item{
-    width: 300px;
-    height: 220px;
-    padding: 0px 30px;
-    margin: 0px 70px;
-}
-.d-block{
-    width: 100px;
-    height: 230px;
-}
-.carousel-caption{
-    width: 200px;
-    height: 55px;
+.card{
+    background-color: black;
+    color: #ffffff;
 }
 .rowMerch{
     width: 480%;
@@ -396,7 +515,40 @@
     color: #6d0b0b;
     padding-top: 10px;
 }
-
+@media screen and (max-width:750px) {
+    .title-merch{
+        font-size: 45px;
+        margin-top: 115px;
+        padding-top: 20px;
+        margin-bottom: 0;
+        height: 100px;
+    }
+    .subtMerch{
+        font-size: 45px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        height: auto;
+    }
+    .row{
+        flex-wrap: wrap;
+        width: 1150%;
+    }
+    .col{
+        flex-wrap: wrap;
+        width: 50%;
+        height: auto;
+    }
+    .card-img-top{
+        width: 100%;
+        height: 500px;
+    }
+    .card-title{
+        font-size: 35px;
+    }
+    .card-text{
+        font-size: 30px;
+    }
+}
 /* ESTILOS TOUR */
 /* BODY MAIN TOUR */
 .subTour{
@@ -438,20 +590,24 @@
     margin-right: 10px;
     font-size: xx-large
 }
-.row{
+.rowTour{
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
 }
 .container{
     color: white;
     width: 900%;
-    height: 400px;
+    height: auto;
     padding: 15px;
     margin-left: 180px;
     margin-right: 350px;
     padding-top: 15px;
     padding-bottom: 5px;
 }
-
 .item-btm{
     display: block;
     padding: .75rem 1.25rem;
@@ -463,7 +619,27 @@
     padding: .375rem .75rem;
     border-radius: .25rem;
 }
-
+@media screen and (max-width:768px) {
+    .tourImagen1{
+        margin-top: 90px;
+        margin-left: 15px;
+        padding-left: 0;
+        margin-right: 15px;
+        padding-right: 0;
+        height: auto;
+    }
+    .tourTitl{
+        font-size: 45px;
+    }
+    .container{
+        width: 1000%;
+        margin-left: 100px;
+        margin-right: 0;
+    }
+    .col{
+        font-size: 35px;
+    }
+}
 /* ESTILOS FOOTER */
 #footer{
     background-color: black;
@@ -514,4 +690,35 @@
     align-items: center;
     margin-top: 20px;
     padding-top: 20px;
+}
+@media screen and (max-width:768px) {
+    #footer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 1200%;
+    }
+    #footerNav{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    #footerNav ul{
+        flex-direction: row;
+        align-items: center;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .footerCopy{
+        margin-top: 80px;
+    }
+    .footerLogo{
+        width: 200px;
+    }
+    .footerRedes{
+        font-size: 50px;
+        margin-top: 0;
+        gap: 60px;
+    }
 }
