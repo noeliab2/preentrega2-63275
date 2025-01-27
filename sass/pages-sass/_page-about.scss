@@ -1,0 +1,252 @@
+/* PRIMER PARTE ABOUT */
+.aboutcaja1{ /*CAJA 1*/
+    width: 90%;
+    position: relative;
+    display: inline-block;
+    flex-wrap: wrap;
+    .aboutImagen1{ /*FOTO PRINCIPAL*/
+        width: 1396%;
+        height: 355px;
+        display: block;
+        padding-top: 70px;
+    }
+    .aboutTitl{ /*FRASE PRINCIPAL*/
+        width: 1250%;
+        height: 50px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 30px ;
+    }
+}
+/* SEGUNDA PARTE DEL MAIN */
+.subAbout1{  /*SUBTITULO 1*/
+    color: #6d0b0b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    width: 1180%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.primerItem{ /*CAJA 2*/
+    display: flex;
+    height: auto;
+    width: 1010%;
+    margin-left: 100px;
+    margin-right: 150px;
+    justify-content: space-between;
+    flex-direction: column;
+    line-height: 20px;
+    .infoAbout{
+        color: white;
+        display: flex;
+        height: auto;
+        .p1{
+            width: 450px;
+            margin: 10px 40px;
+            height: 240px;
+        }
+        .p2{
+            width: 450px;
+            height: 240px;
+            margin: 10px 40px;
+        }
+    }
+}
+/* TERCERA PARTE MEMBERS*/
+.members__titl{  /*SUBTITULO 2*/
+    color: #6d0b0b;
+    display: flex;
+    height: 40px;
+    width: 1180%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.members{ /*CAJA 3*/
+    width: 1200%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    padding-right: 0;
+    min-width: 250px;
+    .members__card{
+        background-color: black;
+        width: 210px;
+        height: auto;
+        font-size: 15px;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        .persona--perfil{
+            width: 100%;
+            height: 250px;
+        }
+        .persona--title{
+            color: #6d0b0b;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .persona--texto{
+            color: white;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 0px
+        }
+    }
+    .members__card:hover {
+        padding-bottom: 10px;
+        padding-right: 5px;
+        box-shadow: 10px 4px  8px rgba(97, 4, 4, 0.731);
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    
+}
+/*TERCERA PARTE*/
+.projects__titl{  /*SUBTITULO 3*/
+    color: #6d0b0b;
+    display: flex;
+    height: 40px;
+    width: 1180%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.projects{ /*CAJA 3*/
+    width: 650px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    padding-left: 10px;
+    .projects__card{
+        background-color: black;
+        width: 170px;
+        height: 220px;
+        .projects--perfil{
+            width: 170px;
+            height: 170px;
+            border-radius: 100%;
+        }
+        .btn-projects{
+            font-size: 26px;
+            padding-top: 2px;
+            padding-left: 18px;
+            padding-right: 12px;
+            background-color: black;
+            color: #6d0b0b;
+        }
+    }
+}
+/*RESPONSIVE*/
+@media screen and (max-width:750px) {
+    .aboutImagen1{ /*PRIMER CAJA ABOUT*/
+        padding-top: 110px;
+        height: auto;
+    }
+    .aboutTitl{
+        font-size: 45px;
+        height: auto;
+    }
+    .subAbout1{ /*SEGUNDA CAJA ABOUT*/
+        font-size: 45px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .primerItem{
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+    .infoAbout{
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 28px;
+    }
+    .p1, .p2{
+        width: 100%;
+        line-height: normal;
+        height: auto;
+    }
+    .members__titl{ /*TERCERA CAJA ABOUT*/
+        font-size: 45px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .members{
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+    .members__card{
+        flex-direction: column;
+        flex: 0 0 auto;
+        width: 35%;
+        height: 500px;
+    }
+    .persona--perfil{
+        width: 100%;
+        height: 400px;
+    }
+    .persona--title{
+        font-size: 30px;
+    }
+    .persona--texto{
+        font-size: 20px;
+    }
+    .projects__titl{ /*CUARTA CAJA ABOUT*/
+        font-size: 45px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .projects{
+        flex-direction: row;
+        width: 600%;
+        height: auto;
+        margin-left: 100px;
+        gap: 100px;
+    }
+    .projects__card{
+        width: 100%;
+        height: auto;
+    }
+    .projects--perfil{
+        width: 100%;
+        height: 220px;
+    }
+    .btn-projects{
+        font-size: 30px;
+        justify-content: center;
+    }
+}

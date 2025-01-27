@@ -1,0 +1,76 @@
+/*ESTILOS MERCH*/
+.title-merch{
+    color: #ffffff;
+    background-color: #370303;
+    width: 1256%;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.subtMerch{
+    color: #6d0b0b;
+    display: flex;
+    height: 30px;
+    width: 1100%;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    margin-left: 80px;
+    margin-right: 60px;
+    padding: 0px 0px;
+    font-size: 25px;
+}
+.row{
+    width: 1200%;
+    margin-left: 25px;
+}
+.card{
+    background-color: black;
+    color: #ffffff;
+}
+.rowMerch{
+    width: 480%;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+.form-label{
+    color: #6d0b0b;
+    padding-top: 10px;
+}
+@media screen and (max-width:750px) {
+    .title-merch{
+        font-size: 45px;
+        margin-top: 115px;
+        padding-top: 20px;
+        margin-bottom: 0;
+        height: 100px;
+    }
+    .subtMerch{
+        font-size: 45px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        height: auto;
+    }
+    .row{
+        flex-wrap: wrap;
+        width: 1150%;
+    }
+    .col{
+        flex-wrap: wrap;
+        width: 50%;
+        height: auto;
+    }
+    .card-img-top{
+        width: 100%;
+        height: 500px;
+    }
+    .card-title{
+        font-size: 35px;
+    }
+    .card-text{
+        font-size: 30px;
+    }
+}

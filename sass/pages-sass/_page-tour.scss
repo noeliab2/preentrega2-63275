@@ -1,0 +1,91 @@
+/* ESTILOS TOUR */
+/* BODY MAIN TOUR */
+.subTour{
+    color: #ffffff;
+    background-color: rgb(8, 72, 109);
+    width: 1250%;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+}
+.tourcaja1{
+    width: 90%;
+    position: relative;
+    display: inline-block;
+}
+.tourImagen1{
+    width: 1300%;
+    height: 335px;
+    display: block;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.tourTitl{
+    width: 1250%;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: xx-large
+}
+.rowTour{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+.container{
+    color: white;
+    width: 900%;
+    height: auto;
+    padding: 15px;
+    margin-left: 180px;
+    margin-right: 350px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.item-btm{
+    display: block;
+    padding: .75rem 1.25rem;
+}
+.buttom__list{
+    background-color: #370303;
+    color: #ffffff;
+    border-radius: 1px;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
+@media screen and (max-width:768px) {
+    .tourImagen1{
+        margin-top: 90px;
+        margin-left: 15px;
+        padding-left: 0;
+        margin-right: 15px;
+        padding-right: 0;
+        height: auto;
+    }
+    .tourTitl{
+        font-size: 45px;
+    }
+    .container{
+        width: 1000%;
+        margin-left: 100px;
+        margin-right: 0;
+    }
+    .col{
+        font-size: 35px;
+    }
+}

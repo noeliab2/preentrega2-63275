@@ -1,0 +1,95 @@
+/*ESTILOS LISTEN */ 
+.streamUs{
+    width: 1256%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #370303;
+    .subTitListen{
+        color: white;
+        width: 1256%;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .streamsUslinks {
+        color: #ffffff00;
+        margin-bottom: 5px;
+        display: flex;
+        height: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+}
+.albums__titl{
+    color: #6d0b0b;
+    display: flex;
+    height: 30px;
+    width: 1180%;
+    margin-top: 24px;
+    margin-bottom: 9px;
+    margin-left: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.albums{
+    width: 1230%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px
+    
+}
+.album__card{
+    display: flex;
+    flex-direction: row;
+    margin: 19px;
+    justify-content: center;
+    width: 290px;
+    height: 360px;
+}
+@media screen and (max-width:750px){
+    .mainlisten{
+        padding-top: 118px;
+    }
+    .streamUs{
+        height: auto;
+    }
+    .subTitListen{
+        height: auto;
+        font-size: 45px;
+    }
+    .streamsUslinks{
+        font-size: 40px;
+        height: auto;
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+    .albums__titl{
+        font-size: 45px;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .albums{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:480px) {
+    .albums{
+        width: 800%;
+        flex-wrap: wrap;
+    }
+    .album__card{
+        height: auto;
+    }
+}
