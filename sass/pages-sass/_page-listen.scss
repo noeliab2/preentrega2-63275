@@ -5,27 +5,30 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #370303;
-    .subTitListen{
-        color: white;
-        width: 1256%;
-        height: 50px;
-        display: inline-block;
-        text-align: center;
-        padding-top: 10px;
-        font-size: 30px;
-        margin-bottom: 0px;
-    }
-    .streamsUslinks {
-        color: #ffffff00;
-        margin-bottom: 5px;
-        display: flex;
-        height: 20px;
-        width: 100%;
-        margin-bottom: 10px;
-        align-items: center;
-        justify-content: center;
-        gap: 70px;
-    }
+}
+.subTitListen{
+    color: white;
+    width: 1256%;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.streamsUslinks {
+    color: #ffffff00;
+    margin-bottom: 5px;
+    display: flex;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.streamsUslinks li a{
+    color: white;
 }
 .albums__titl{
     color: #6d0b0b;

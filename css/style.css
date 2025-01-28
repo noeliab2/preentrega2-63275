@@ -1,18 +1,799 @@
-/* Error: Undefined variable.
- *    ,
- * 10 |     background-color: $color-primario;
- *    |                       ^^^^^^^^^^^^^^^
- *    '
- *   sass\presets\_reset.scss 10:23  @use
- *   sass\style.scss 3:1             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      background-color: $color-primario;\d\a    \2502                        ^^^^^^^^^^^^^^^\a    \2575 \a   sass\\presets\\_reset.scss 10:23  @use\a   sass\\style.scss 3:1             root stylesheet";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+/*ESTILOS BODY*/
+#body {
+  max-width: 100px;
+  background-color: black;
+  height: auto;
+}
+
+/*HEADER*/
+#header {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  display: flex;
+  position: fixed;
+  z-index: 10000;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.headerLogo {
+  width: 320px;
+  height: 80px;
+}
+
+#nav ul {
+  margin-bottom: 0;
+}
+
+#nav ul li {
+  display: inline-block;
+  flex-wrap: wrap;
+  margin: 14px;
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+#nav ul li a {
+  color: #6d0b0b;
+}
+
+#main { /*MAIN INDEX*/
+  min-height: 100vh;
+  text-align: center;
+}
+
+/*MAIN ABOUT*/
+.mainAbout {
+  min-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*MAIN LISTEN*/
+.mainlisten {
+  padding-top: 70px;
+  min-height: 100vh;
+  height: auto;
+}
+
+/*MAIN MERCH*/
+.mainMerch {
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+}
+
+/* ESTILOS FOOTER */
+#footer {
+  background-color: black;
+  width: 1256px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerlogo {
+  display: flex;
+  height: 90px;
+  margin-top: 14px;
+}
+
+#footerNav {
+  margin: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+  height: 60px;
+  width: 50%;
+}
+
+#footerNav ul {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  gap: 50px;
+  color: black;
+}
+
+#footerNav ul li a {
+  color: #6d0b0b;
+}
+
+.footerNav-copy {
+  display: flex;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.footerRedes {
+  margin: 15px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  font-size: 32px;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 1200%;
+  }
+  #footerNav {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  #footerNav ul {
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .footerCopy {
+    margin-top: 80px;
+  }
+  .footerLogo {
+    width: 200px;
+  }
+  .footerRedes {
+    font-size: 50px;
+    margin-top: 0;
+    gap: 60px;
+  }
+}
+/*PAGINAS*/
+/*MAIN INDEX*/
+.imagesindex {
+  width: 1256%;
+  height: auto;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+
+.subtit1 {
+  color: #ffffff;
+  background-color: #370303;
+  width: 1256%;
+  height: 70px;
+  display: inline-block;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 13px;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+
+.video1 {
+  height: auto;
+  width: 1250%;
+  text-align: center;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: row;
+    height: 120px;
+    font-size: 40px;
+  }
+  #nav ul li {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .headerLogo {
+    width: 310px;
+    height: auto;
+  } /*MAIN INDEX*/
+  .imagesindex {
+    padding-top: 116px;
+    height: 550px;
+  }
+  .subtit1 {
+    font-size: 45px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #header {
+    height: 120px;
+  }
+  #nav ul li {
+    font-size: 25px;
+  }
+  .headerLogo {
+    width: 310px;
+    height: auto;
+  }
+  .imagesindex {
+    height: 600px;
+  }
+}
+/* PRIMER PARTE ABOUT */
+.aboutcaja1 { /*CAJA 1*/
+  width: 90%;
+  position: relative;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+.aboutImagen1 { /*FOTO PRINCIPAL*/
+  width: 1396%;
+  height: 355px;
+  display: block;
+  padding-top: 70px;
+}
+
+.aboutTitl { /*FRASE PRINCIPAL*/
+  width: 1250%;
+  height: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+/* SEGUNDA PARTE DEL MAIN */
+.subAbout1 { /*SUBTITULO 1*/
+  color: #6d0b0b;
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  width: 1180%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.primerItem { /*CAJA 2*/
+  display: flex;
+  height: auto;
+  width: 1010%;
+  margin-left: 100px;
+  margin-right: 150px;
+  justify-content: space-between;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.infoAbout {
+  color: white;
+  display: flex;
+  height: auto;
+}
+
+.p1 {
+  width: 450px;
+  margin: 10px 40px;
+  height: 240px;
+}
+
+.p2 {
+  width: 450px;
+  height: 240px;
+  margin: 10px 40px;
+}
+
+/* TERCERA PARTE MEMBERS*/
+.members__titl { /*SUBTITULO 2*/
+  color: #6d0b0b;
+  display: flex;
+  height: 40px;
+  width: 1180%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.members { /*CAJA 3*/
+  width: 1200%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  padding-right: 0;
+  min-width: 250px;
+}
+
+.members__card:hover {
+  padding-bottom: 10px;
+  padding-right: 5px;
+  box-shadow: 10px 4px 8px rgba(97, 4, 4, 0.731);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.members__card {
+  background-color: black;
+  width: 210px;
+  height: auto;
+  font-size: 15px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.persona--perfil {
+  width: 100%;
+  height: 250px;
+}
+
+.persona--title {
+  color: #6d0b0b;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.persona--texto {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+/*TERCERA PARTE*/
+.projects__titl { /*SUBTITULO 3*/
+  color: #6d0b0b;
+  display: flex;
+  height: 40px;
+  width: 1180%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.projects { /*CAJA 3*/
+  width: 650px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 50px;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+.projects__card {
+  background-color: black;
+  width: 170px;
+  height: 220px;
+}
+
+.projects--perfil {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+}
+
+.btn-projects {
+  font-size: 26px;
+  padding-top: 2px;
+  padding-left: 18px;
+  padding-right: 12px;
+  background-color: black;
+  color: #6d0b0b;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 750px) {
+  .aboutImagen1 { /*PRIMER CAJA ABOUT*/
+    padding-top: 110px;
+    height: auto;
+  }
+  .aboutTitl {
+    font-size: 45px;
+    height: auto;
+  }
+  .subAbout1 { /*SEGUNDA CAJA ABOUT*/
+    font-size: 45px;
+    margin-bottom: 30px;
+    height: auto;
+  }
+  .primerItem {
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+  .infoAbout {
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 28px;
+  }
+  .p1, .p2 {
+    width: 100%;
+    line-height: normal;
+    height: auto;
+  }
+  .members__titl { /*TERCERA CAJA ABOUT*/
+    font-size: 45px;
+    margin-bottom: 30px;
+    height: auto;
+  }
+  .members {
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+  .members__card {
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 35%;
+    height: 500px;
+  }
+  .persona--perfil {
+    width: 100%;
+    height: 400px;
+  }
+  .persona--title {
+    font-size: 30px;
+  }
+  .persona--texto {
+    font-size: 20px;
+  }
+  .projects__titl { /*CUARTA CAJA ABOUT*/
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: auto;
+  }
+  .projects {
+    flex-direction: row;
+    width: 600%;
+    height: auto;
+    margin-left: 100px;
+    gap: 100px;
+  }
+  .projects__card {
+    width: 100%;
+    height: auto;
+  }
+  .projects--perfil {
+    width: 100%;
+    height: 220px;
+  }
+  .btn-projects {
+    font-size: 30px;
+    justify-content: center;
+  }
+}
+/*ESTILOS LISTEN */
+.streamUs {
+  width: 1256%;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #370303;
+}
+
+.subTitListen {
+  color: white;
+  width: 1256%;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.streamsUslinks {
+  color: rgba(255, 255, 255, 0);
+  margin-bottom: 5px;
+  display: flex;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.streamsUslinks li a {
+  color: white;
+}
+
+.albums__titl {
+  color: #6d0b0b;
+  display: flex;
+  height: 30px;
+  width: 1180%;
+  margin-top: 24px;
+  margin-bottom: 9px;
+  margin-left: 70px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.albums {
+  width: 1230%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.album__card {
+  display: flex;
+  flex-direction: row;
+  margin: 19px;
+  justify-content: center;
+  width: 290px;
+  height: 360px;
+}
+
+@media screen and (max-width: 750px) {
+  .mainlisten {
+    padding-top: 118px;
+  }
+  .streamUs {
+    height: auto;
+  }
+  .subTitListen {
+    height: auto;
+    font-size: 45px;
+  }
+  .streamsUslinks {
+    font-size: 40px;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
+  .albums__titl {
+    font-size: 45px;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .albums {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  .albums {
+    width: 800%;
+    flex-wrap: wrap;
+  }
+  .album__card {
+    height: auto;
+  }
+}
+/*ESTILOS MERCH*/
+.title-merch {
+  color: #ffffff;
+  background-color: #370303;
+  width: 1256%;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.subtMerch {
+  color: #6d0b0b;
+  display: flex;
+  height: 30px;
+  width: 1100%;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  margin-left: 80px;
+  margin-right: 60px;
+  padding: 0px 0px;
+  font-size: 25px;
+}
+
+.row {
+  width: 1200%;
+  margin-left: 25px;
+}
+
+.card {
+  background-color: black;
+  color: #ffffff;
+}
+
+.rowMerch {
+  width: 480%;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 150px;
+}
+
+.form-label {
+  color: #6d0b0b;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .title-merch {
+    font-size: 45px;
+    margin-top: 115px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    height: 100px;
+  }
+  .subtMerch {
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    height: auto;
+  }
+  .row {
+    flex-wrap: wrap;
+    width: 1150%;
+  }
+  .col {
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 500px;
+  }
+  .card-title {
+    font-size: 35px;
+  }
+  .card-text {
+    font-size: 30px;
+  }
+}
+/* ESTILOS TOUR */
+/* BODY MAIN TOUR */
+.subTour {
+  color: #ffffff;
+  background-color: rgb(8, 72, 109);
+  width: 1250%;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+}
+
+.tourcaja1 {
+  width: 90%;
+  position: relative;
+  display: inline-block;
+}
+
+.tourImagen1 {
+  width: 1300%;
+  height: 335px;
+  display: block;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.tourTitl {
+  width: 1250%;
+  height: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: xx-large;
+}
+
+.rowTour {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.container {
+  color: white;
+  width: 900%;
+  height: auto;
+  padding: 15px;
+  margin-left: 180px;
+  margin-right: 350px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.item-btm {
+  display: block;
+  padding: 0.75rem 1.25rem;
+}
+
+.buttom__list {
+  background-color: #370303;
+  color: #ffffff;
+  border-radius: 1px;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .tourImagen1 {
+    margin-top: 90px;
+    margin-left: 15px;
+    padding-left: 0;
+    margin-right: 15px;
+    padding-right: 0;
+    height: auto;
+  }
+  .tourTitl {
+    font-size: 45px;
+  }
+  .container {
+    width: 1000%;
+    margin-left: 100px;
+    margin-right: 0;
+  }
+  .col {
+    font-size: 35px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

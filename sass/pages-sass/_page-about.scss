@@ -4,13 +4,14 @@
     position: relative;
     display: inline-block;
     flex-wrap: wrap;
-    .aboutImagen1{ /*FOTO PRINCIPAL*/
-        width: 1396%;
-        height: 355px;
-        display: block;
-        padding-top: 70px;
-    }
-    .aboutTitl{ /*FRASE PRINCIPAL*/
+}
+.aboutImagen1{ /*FOTO PRINCIPAL*/
+    width: 1396%;
+    height: 355px;
+    display: block;
+    padding-top: 70px;
+}
+.aboutTitl{ /*FRASE PRINCIPAL*/
         width: 1250%;
         height: 50px;
         color: white;
@@ -25,7 +26,6 @@
         margin-right: 10px;
         font-size: 30px ;
     }
-}
 /* SEGUNDA PARTE DEL MAIN */
 .subAbout1{  /*SUBTITULO 1*/
     color: #6d0b0b;
@@ -48,21 +48,22 @@
     justify-content: space-between;
     flex-direction: column;
     line-height: 20px;
-    .infoAbout{
-        color: white;
-        display: flex;
-        height: auto;
-        .p1{
-            width: 450px;
-            margin: 10px 40px;
-            height: 240px;
-        }
-        .p2{
-            width: 450px;
-            height: 240px;
-            margin: 10px 40px;
-        }
-    }
+}
+.infoAbout{
+    color: white;
+    display: flex;
+    height: auto;
+    
+}
+.p1{
+    width: 450px;
+    margin: 10px 40px;
+    height: 240px;
+}
+.p2{
+    width: 450px;
+    height: 240px;
+    margin: 10px 40px;
 }
 /* TERCERA PARTE MEMBERS*/
 .members__titl{  /*SUBTITULO 2*/
@@ -88,45 +89,45 @@
     padding: 10px;
     padding-right: 0;
     min-width: 250px;
-    .members__card{
-        background-color: black;
-        width: 210px;
-        height: auto;
-        font-size: 15px;
-        transition: 1s;
-        -webkit-transition: 1s;
-        -moz-transition: 1s;
-        -ms-transition: 1s;
-        -o-transition: 1s;
-        .persona--perfil{
-            width: 100%;
-            height: 250px;
-        }
-        .persona--title{
-            color: #6d0b0b;
-            text-align: center;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
-        .persona--texto{
-            color: white;
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 0px
-        }
-    }
-    .members__card:hover {
-        padding-bottom: 10px;
-        padding-right: 5px;
-        box-shadow: 10px 4px  8px rgba(97, 4, 4, 0.731);
-        transition: 1s;
-        -webkit-transition: 1s;
-        -moz-transition: 1s;
-        -ms-transition: 1s;
-        -o-transition: 1s;
-    }
+}
+.members__card:hover {
+    padding-bottom: 10px;
+    padding-right: 5px;
+    box-shadow: 10px 4px  8px rgba(97, 4, 4, 0.731);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.members__card{
+    background-color: black;
+    width: 210px;
+    height: auto;
+    font-size: 15px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     
+}
+.persona--perfil{
+    width: 100%;
+    height: 250px;
+}
+.persona--title{
+    color: #6d0b0b;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.persona--texto{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px
 }
 /*TERCERA PARTE*/
 .projects__titl{  /*SUBTITULO 3*/
@@ -151,24 +152,24 @@
     margin-left: 50px;
     padding: 10px;
     padding-left: 10px;
-    .projects__card{
-        background-color: black;
-        width: 170px;
-        height: 220px;
-        .projects--perfil{
-            width: 170px;
-            height: 170px;
-            border-radius: 100%;
-        }
-        .btn-projects{
-            font-size: 26px;
-            padding-top: 2px;
-            padding-left: 18px;
-            padding-right: 12px;
-            background-color: black;
-            color: #6d0b0b;
-        }
-    }
+}
+.projects__card{
+    background-color: black;
+    width: 170px;
+    height: 220px;
+}
+.projects--perfil{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+}
+.btn-projects{
+    font-size: 26px;
+    padding-top: 2px;
+    padding-left: 18px;
+    padding-right: 12px;
+    background-color: black;
+    color: #6d0b0b;
 }
 /*RESPONSIVE*/
 @media screen and (max-width:750px) {
