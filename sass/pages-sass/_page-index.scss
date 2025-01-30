@@ -4,19 +4,19 @@
     width: 1256%;
     height: auto;
     flex-wrap: wrap;
-    padding-top: 80px;
+    padding-top: 110px;
 }
 .subtit1 {
     color: #ffffff;
     background-color: #370303;
     width: 1256%;
-    height: 70px;
+    height: 80px;
     display: inline-block;
     flex-wrap: wrap;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 15px;
     margin-bottom: 0px;
-    font-size: 30px;
+    font-size: 35px;
 }
 .video1{
     height: auto;
@@ -26,45 +26,22 @@
 .img-fluid{
     width: 100%;
 }
+
 @media screen and (max-width:768px) {
-    #header{
-        flex-direction: row;
-        height: 120px;
-        font-size: 40px;
-    }
-    #nav ul li{
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-        font-size: 25px;
-    }
-    .headerLogo{
-        width: 310px;
-        height: auto;
-    } /*MAIN INDEX*/
+    /*MAIN INDEX*/
     .imagesindex{
-        padding-top: 116px;
-        height: 550px;
+        padding-top: 200px;
+        height: 570px;
     }
     .subtit1{
-        font-size: 45px;
-        padding-top: 10px;
+        font-size: 65px;
+        padding-top: 50px;
         margin-bottom: 0px;
-        height: 100px;
+        height: 190px;
     }
 }
 @media screen and (max-width:480px) {
-    #header{
-        height: 120px;
-    }
-    #nav ul li{
-        font-size: 25px;
-    }
-    .headerLogo{
-        width: 310px;
-        height: auto;
-    }
     .imagesindex{
-        height: 600px;
+        height: 670px;
     }
 }

@@ -7,25 +7,25 @@
 }
 .aboutImagen1{ /*FOTO PRINCIPAL*/
     width: 1396%;
-    height: 355px;
+    height: 450px;
     display: block;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 .aboutTitl{ /*FRASE PRINCIPAL*/
-        width: 1250%;
-        height: 50px;
-        color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        padding: 10px;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 30px ;
-    }
+    width: 1250%;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px ;
+}
 /* SEGUNDA PARTE DEL MAIN */
 .subAbout1{  /*SUBTITULO 1*/
     color: #6d0b0b;
@@ -174,15 +174,16 @@
 /*RESPONSIVE*/
 @media screen and (max-width:750px) {
     .aboutImagen1{ /*PRIMER CAJA ABOUT*/
-        padding-top: 110px;
+        padding-top: 200px;
         height: auto;
     }
     .aboutTitl{
-        font-size: 45px;
+        font-size: 50px;
         height: auto;
+        padding-top: 50px;
     }
     .subAbout1{ /*SEGUNDA CAJA ABOUT*/
-        font-size: 45px;
+        font-size: 50px;
         margin-bottom: 30px;
         height: auto;
     }
@@ -193,7 +194,7 @@
     .infoAbout{
         flex-wrap: wrap;
         width: 100%;
-        font-size: 28px;
+        font-size: 30px;
     }
     .p1, .p2{
         width: 100%;
@@ -201,32 +202,33 @@
         height: auto;
     }
     .members__titl{ /*TERCERA CAJA ABOUT*/
-        font-size: 45px;
+        font-size: 50px;
         margin-bottom: 30px;
         height: auto;
     }
     .members{
         flex-wrap: wrap;
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
     .members__card{
         flex-direction: column;
         flex: 0 0 auto;
         width: 35%;
         height: 500px;
+        margin-bottom: 50px;
     }
     .persona--perfil{
         width: 100%;
         height: 400px;
     }
     .persona--title{
-        font-size: 30px;
+        font-size: 35px;
     }
     .persona--texto{
         font-size: 20px;
     }
     .projects__titl{ /*CUARTA CAJA ABOUT*/
-        font-size: 45px;
+        font-size: 50px;
         margin-top: 10px;
         margin-bottom: 30px;
         height: auto;

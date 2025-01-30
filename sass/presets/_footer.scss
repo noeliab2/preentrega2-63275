@@ -2,33 +2,34 @@
 #footer{
     background-color: black;
     width: 1256px;
-    height: 120px;
+    height: 130px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .footerlogo{ 
     display: flex;
-    height: 90px;
-    margin-top: 14px;
+    height: auto;
 }
 #footerNav {
-    margin: 15px;
-    margin-bottom: 5px;
-    display: inline-block;
-    height: 60px;
+    display: flex;
+    height: auto;
     width: 50%;
+    justify-content: center;
+    flex-direction: column;
 }
 #footerNav ul {
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 20px;
-    margin-left: 20px;
     margin-right: 20px;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 100%;
     gap: 50px;
     color: black;
+    font-size: 20px;
 }
 #footerNav ul li a{
     color: #6d0b0b;
@@ -46,40 +47,41 @@
     height: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 35px;
     font-size: 32px;
     align-items: center;
-    margin-top: 20px;
-    padding-top: 20px;
 }
+
 @media screen and (max-width:768px) {
     #footer{
         flex-direction: column;
         align-items: center;
         height: auto;
-        width: 1200%;
+        width: 1250%;
+    }
+    .footerlogo{
+        width: 300px;
+        height: 140px;
     }
     #footerNav{
-        margin-top: 5px;
         margin-bottom: 0;
     }
     #footerNav ul{
         flex-direction: row;
         align-items: center;
-        font-size: 25px;
+        font-size: 30px;
         margin-top: 10px;
         margin-bottom: 0;
         width: 100%;
-    }
+        }
     .footerCopy{
-        margin-top: 80px;
-    }
-    .footerLogo{
-        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
     .footerRedes{
         font-size: 50px;
-        margin-top: 0;
+        margin-top: 15px;
         gap: 60px;
     }
 }

@@ -12,15 +12,14 @@
     width: 90%;
     position: relative;
     display: inline-block;
+    padding-top: 110px;
 }
 .tourImagen1{
     width: 1300%;
     height: 335px;
     display: block;
-    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -33,7 +32,7 @@
     left: 50%;
     text-align: center;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -46,14 +45,15 @@
     margin-top: calc(-1* var(--bs-gutter-y));
     margin-right: calc(-.5* var(--bs-gutter-x));
     margin-left: calc(-.5* var(--bs-gutter-x));
+    margin-bottom: 15px;
 }
 .container{
     color: white;
     width: 900%;
     height: auto;
     padding: 15px;
-    margin-left: 180px;
-    margin-right: 350px;
+    margin-left: 250px;
+    margin-right: 300px;
     padding-top: 15px;
     padding-bottom: 5px;
 }
@@ -69,8 +69,10 @@
     border-radius: .25rem;
 }
 @media screen and (max-width:768px) {
+    .tourcaja1{
+        padding-top: 200px;
+    }
     .tourImagen1{
-        margin-top: 90px;
         margin-left: 15px;
         padding-left: 0;
         margin-right: 15px;
@@ -78,12 +80,14 @@
         height: auto;
     }
     .tourTitl{
-        font-size: 45px;
+        font-size: 50px;
+        margin-top: 50px;
     }
     .container{
         width: 1000%;
         margin-left: 100px;
         margin-right: 0;
+        margin-bottom: 25px;
     }
     .col{
         font-size: 35px;

@@ -28,7 +28,7 @@
 
 .headerLogo {
   width: 320px;
-  height: 80px;
+  height: 110px;
 }
 
 #nav ul {
@@ -39,14 +39,43 @@
   display: inline-block;
   flex-wrap: wrap;
   margin: 14px;
-  padding: 10px 10px;
-  font-size: 20px;
+  padding: 5px 5px;
+  font-size: 26px;
 }
 
 #nav ul li a {
   color: #6d0b0b;
 }
 
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: row;
+    height: 200px;
+    font-size: 40px;
+  }
+  .headerLogo {
+    width: 350px;
+    height: 190px;
+  }
+  #nav ul li {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #header {
+    height: 200px;
+  }
+  .headerLogo {
+    width: 350px;
+    height: 190px;
+  }
+  #nav ul li {
+    font-size: 35px;
+  }
+}
 #main { /*MAIN INDEX*/
   min-height: 100vh;
   text-align: center;
@@ -61,7 +90,7 @@
 
 /*MAIN LISTEN*/
 .mainlisten {
-  padding-top: 70px;
+  padding-top: 110px;
   min-height: 100vh;
   height: auto;
 }
@@ -71,42 +100,44 @@
   min-height: 100vh;
   width: 100%;
   height: auto;
+  padding-top: 110px;
 }
 
 /* ESTILOS FOOTER */
 #footer {
   background-color: black;
   width: 1256px;
-  height: 120px;
+  height: 130px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footerlogo {
   display: flex;
-  height: 90px;
-  margin-top: 14px;
+  height: auto;
 }
 
 #footerNav {
-  margin: 15px;
-  margin-bottom: 5px;
-  display: inline-block;
-  height: 60px;
+  display: flex;
+  height: auto;
   width: 50%;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #footerNav ul {
   display: flex;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 20px;
-  margin-left: 20px;
   margin-right: 20px;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 100%;
   gap: 50px;
   color: black;
+  font-size: 20px;
 }
 
 #footerNav ul li a {
@@ -127,11 +158,10 @@
   height: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 35px;
   font-size: 32px;
   align-items: center;
-  margin-top: 20px;
-  padding-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -139,29 +169,30 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 1200%;
+    width: 1250%;
+  }
+  .footerlogo {
+    width: 300px;
+    height: 140px;
   }
   #footerNav {
-    margin-top: 5px;
     margin-bottom: 0;
   }
   #footerNav ul {
     flex-direction: row;
     align-items: center;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 10px;
     margin-bottom: 0;
     width: 100%;
   }
   .footerCopy {
-    margin-top: 80px;
-  }
-  .footerLogo {
-    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   .footerRedes {
     font-size: 50px;
-    margin-top: 0;
+    margin-top: 15px;
     gap: 60px;
   }
 }
@@ -171,20 +202,20 @@
   width: 1256%;
   height: auto;
   flex-wrap: wrap;
-  padding-top: 80px;
+  padding-top: 110px;
 }
 
 .subtit1 {
   color: #ffffff;
   background-color: #370303;
   width: 1256%;
-  height: 70px;
+  height: 80px;
   display: inline-block;
   flex-wrap: wrap;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 15px;
   margin-bottom: 0px;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .video1 {
@@ -198,45 +229,21 @@
 }
 
 @media screen and (max-width: 768px) {
-  #header {
-    flex-direction: row;
-    height: 120px;
-    font-size: 40px;
-  }
-  #nav ul li {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 25px;
-  }
-  .headerLogo {
-    width: 310px;
-    height: auto;
-  } /*MAIN INDEX*/
+  /*MAIN INDEX*/
   .imagesindex {
-    padding-top: 116px;
-    height: 550px;
+    padding-top: 200px;
+    height: 570px;
   }
   .subtit1 {
-    font-size: 45px;
-    padding-top: 10px;
+    font-size: 65px;
+    padding-top: 50px;
     margin-bottom: 0px;
-    height: 100px;
+    height: 190px;
   }
 }
 @media screen and (max-width: 480px) {
-  #header {
-    height: 120px;
-  }
-  #nav ul li {
-    font-size: 25px;
-  }
-  .headerLogo {
-    width: 310px;
-    height: auto;
-  }
   .imagesindex {
-    height: 600px;
+    height: 670px;
   }
 }
 /* PRIMER PARTE ABOUT */
@@ -249,9 +256,9 @@
 
 .aboutImagen1 { /*FOTO PRINCIPAL*/
   width: 1396%;
-  height: 355px;
+  height: 450px;
   display: block;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 .aboutTitl { /*FRASE PRINCIPAL*/
@@ -433,15 +440,16 @@
 /*RESPONSIVE*/
 @media screen and (max-width: 750px) {
   .aboutImagen1 { /*PRIMER CAJA ABOUT*/
-    padding-top: 110px;
+    padding-top: 200px;
     height: auto;
   }
   .aboutTitl {
-    font-size: 45px;
+    font-size: 50px;
     height: auto;
+    padding-top: 50px;
   }
   .subAbout1 { /*SEGUNDA CAJA ABOUT*/
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: 30px;
     height: auto;
   }
@@ -452,7 +460,7 @@
   .infoAbout {
     flex-wrap: wrap;
     width: 100%;
-    font-size: 28px;
+    font-size: 30px;
   }
   .p1, .p2 {
     width: 100%;
@@ -460,32 +468,33 @@
     height: auto;
   }
   .members__titl { /*TERCERA CAJA ABOUT*/
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: 30px;
     height: auto;
   }
   .members {
     flex-wrap: wrap;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
   .members__card {
     flex-direction: column;
     flex: 0 0 auto;
     width: 35%;
     height: 500px;
+    margin-bottom: 50px;
   }
   .persona--perfil {
     width: 100%;
     height: 400px;
   }
   .persona--title {
-    font-size: 30px;
+    font-size: 35px;
   }
   .persona--texto {
     font-size: 20px;
   }
   .projects__titl { /*CUARTA CAJA ABOUT*/
-    font-size: 45px;
+    font-size: 50px;
     margin-top: 10px;
     margin-bottom: 30px;
     height: auto;
@@ -581,10 +590,11 @@
 
 @media screen and (max-width: 750px) {
   .mainlisten {
-    padding-top: 118px;
+    padding-top: 200px;
   }
   .streamUs {
     height: auto;
+    padding-top: 15px;
   }
   .subTitListen {
     height: auto;
@@ -597,7 +607,7 @@
     margin-bottom: 15px;
   }
   .albums__titl {
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: 20px;
     height: auto;
   }
@@ -607,7 +617,7 @@
 }
 @media screen and (max-width: 480px) {
   .albums {
-    width: 800%;
+    width: 1200%;
     flex-wrap: wrap;
   }
   .album__card {
@@ -622,8 +632,7 @@
   height: 70px;
   display: inline-block;
   text-align: center;
-  margin-top: 80px;
-  padding-top: 10px;
+  padding-top: 15px;
   font-size: 30px;
 }
 
@@ -659,19 +668,31 @@
 
 .form-label {
   color: #6d0b0b;
-  padding-top: 10px;
+  padding-top: 15px;
+}
+
+.form-check {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.form-check-label {
+  color: #6d0b0b;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 750px) {
+  .mainMerch {
+    padding-top: 200px;
+  }
   .title-merch {
-    font-size: 45px;
-    margin-top: 115px;
-    padding-top: 20px;
+    font-size: 50px;
+    padding-top: 30px;
     margin-bottom: 0;
-    height: 100px;
+    height: 130px;
   }
   .subtMerch {
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: 20px;
     margin-right: 0;
     height: auto;
@@ -711,16 +732,15 @@
   width: 90%;
   position: relative;
   display: inline-block;
+  padding-top: 110px;
 }
 
 .tourImagen1 {
   width: 1300%;
   height: 335px;
   display: block;
-  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -734,7 +754,7 @@
   left: 50%;
   text-align: center;
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -748,6 +768,7 @@
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-bottom: 15px;
 }
 
 .container {
@@ -755,8 +776,8 @@
   width: 900%;
   height: auto;
   padding: 15px;
-  margin-left: 180px;
-  margin-right: 350px;
+  margin-left: 250px;
+  margin-right: 300px;
   padding-top: 15px;
   padding-bottom: 5px;
 }
@@ -775,8 +796,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .tourcaja1 {
+    padding-top: 200px;
+  }
   .tourImagen1 {
-    margin-top: 90px;
     margin-left: 15px;
     padding-left: 0;
     margin-right: 15px;
@@ -784,12 +807,14 @@
     height: auto;
   }
   .tourTitl {
-    font-size: 45px;
+    font-size: 50px;
+    margin-top: 50px;
   }
   .container {
     width: 1000%;
     margin-left: 100px;
     margin-right: 0;
+    margin-bottom: 25px;
   }
   .col {
     font-size: 35px;

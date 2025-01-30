@@ -63,10 +63,11 @@
 }
 @media screen and (max-width:750px){
     .mainlisten{
-        padding-top: 118px;
+        padding-top: 200px;
     }
     .streamUs{
         height: auto;
+        padding-top: 15px;
     }
     .subTitListen{
         height: auto;
@@ -79,7 +80,7 @@
         margin-bottom: 15px;
     }
     .albums__titl{
-        font-size: 45px;
+        font-size: 50px;
         margin-bottom: 20px;
         height: auto;
     }
@@ -89,7 +90,7 @@
 }
 @media screen and (max-width:480px) {
     .albums{
-        width: 800%;
+        width: 1200%;
         flex-wrap: wrap;
     }
     .album__card{

@@ -6,8 +6,7 @@
     height: 70px;
     display: inline-block;
     text-align: center;
-    margin-top: 80px;
-    padding-top: 10px;
+    padding-top: 15px;
     font-size: 30px;
 }
 .subtMerch{
@@ -38,18 +37,29 @@
 }
 .form-label{
     color: #6d0b0b;
-    padding-top: 10px;
+    padding-top: 15px;
 }
+.form-check{
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+.form-check-label{
+    color: #6d0b0b;
+    font-size: 14px;
+}
+
 @media screen and (max-width:750px) {
+    .mainMerch{
+        padding-top: 200px;
+    }
     .title-merch{
-        font-size: 45px;
-        margin-top: 115px;
-        padding-top: 20px;
+        font-size: 50px;
+        padding-top: 30px;
         margin-bottom: 0;
-        height: 100px;
+        height: 130px;
     }
     .subtMerch{
-        font-size: 45px;
+        font-size: 50px;
         margin-bottom: 20px;
         margin-right: 0;
         height: auto;
