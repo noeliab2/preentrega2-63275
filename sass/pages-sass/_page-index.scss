@@ -1,4 +1,3 @@
-
 /*MAIN INDEX*/
 .imagesindex {
     width: 1256%;
@@ -26,12 +25,11 @@
 .img-fluid{
     width: 100%;
 }
-
 @media screen and (max-width:768px) {
     /*MAIN INDEX*/
     .imagesindex{
-        padding-top: 200px;
-        height: 570px;
+        padding-top: 210px;
+        height: 650px;
     }
     .subtit1{
         font-size: 65px;
@@ -42,6 +40,6 @@
 }
 @media screen and (max-width:480px) {
     .imagesindex{
-        height: 670px;
+        height: 750px;
     }
 }

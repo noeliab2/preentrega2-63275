@@ -47,13 +47,17 @@
 }
 @media screen and (max-width:480px) {
     #header{
-        height: 200px;
+        height: 210px;
+        padding: 0;
     }
     .headerLogo{
-        width: 350px;
-        height: 190px;
+        width: 410px;
+        height: 200px;
+    }
+    #nav ul {
+        padding: 0;
     }
     #nav ul li{
-        font-size: 35px;
+        font-size: 40px;
     }
 }
